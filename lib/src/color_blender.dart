@@ -12,8 +12,6 @@
 
 import 'dart:ui' show Color;
 
-import 'package:meta/meta.dart' show protected;
-
 // ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
 
 abstract base class ColorBlender {
@@ -54,7 +52,6 @@ abstract base class ColorBlender {
   //
   //
 
-  @protected
   Color $blend(
     Color c1,
     Color c2,
