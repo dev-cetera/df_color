@@ -12,7 +12,7 @@
 
 name: df_color
 description: Color utilities to enhance design aesthetics in your Flutter applications.
-version: 0.1.1
+version: 0.1.2
 repository: https://github.com/robmllze/df_color
 funding:
   - https://www.buymeacoffee.com/robmllze
@@ -38,6 +38,4 @@ dependencies:
 ## -----------------------------------------------------------------------------
 
 dev_dependencies:
-  flutter_test:
-    sdk: flutter
   flutter_lints: ^5.0.0
