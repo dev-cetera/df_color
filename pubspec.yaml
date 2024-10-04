@@ -11,9 +11,17 @@
 ##.title~
 
 name: df_color
-description: Color utilities for Flutter.
+description: Color utilities to enhance design aesthetics in your Flutter applications.
 version: 0.1.1
 repository: https://github.com/robmllze/df_color
+funding:
+  - https://www.buymeacoffee.com/robmllze
+topics:
+  - color
+  - colour
+  - aesthenic
+  - design
+  - utility
 
 ## -----------------------------------------------------------------------------
 
