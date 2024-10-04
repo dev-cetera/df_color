@@ -5,14 +5,14 @@
 ## source code is governed by an MIT-style license described in the LICENSE
 ## file located in this project's root directory.
 ##
-## See: https:##opensource.org/license/mit
+## See: https://opensource.org/license/mit
 ##
 ## ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓
 ##.title~
 
 name: df_color
 description: Color utilities for Flutter.
-version: 0.1.0
+version: 0.1.1
 repository: https://github.com/robmllze/df_color
 
 ## -----------------------------------------------------------------------------
@@ -32,8 +32,4 @@ dependencies:
 dev_dependencies:
   flutter_test:
     sdk: flutter
-  flutter_lints: ^4.0.0
-
-## -----------------------------------------------------------------------------
-
-flutter:
+  flutter_lints: ^5.0.0

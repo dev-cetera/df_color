@@ -11,13 +11,13 @@ Dart & Flutter Packages by DevCetra.com & contributors.
 
 ## Summary
 
-<!-- TODO: Write summary here -->
+Unavailable. Please check in later.
 
 For a full feature set, please refer to the [API reference](https://pub.dev/documentation/df_color/).
 
 ## Usage Example
 
-<!-- TODO: Write usage example here -->
+Unavailable. Please check in later.
 
 ## Installation
 
@@ -31,7 +31,6 @@ This is an open-source project, and we warmly welcome contributions from everyon
 
 ### Ways you can contribute:
 
-- **Join the discussions and ask questions:** Your curiosity can lead to valuable insights and improvements.
 - **Buy me a coffee:** If you'd like to support the project financially, consider [buying me a coffee](https://www.buymeacoffee.com/robmllze). Your support helps cover the costs of development and keeps the project growing.
 - **Share your ideas:** Every perspective matters, and your ideas can spark innovation.
 - **Report bugs:** Help us identify and fix issues to make the project more robust.
@@ -42,14 +41,6 @@ This is an open-source project, and we warmly welcome contributions from everyon
 No matter how you choose to contribute, your involvement is greatly appreciated and valued!
 
 ---
-
-### Join Reddit Discussions:
-
-💬 https://www.reddit.com/r/df_color/
-
-### Join GitHub Discussions:
-
-💬 https://github.com/robmllze/df_color/discussions/
 
 ### Chief Maintainer:
 
