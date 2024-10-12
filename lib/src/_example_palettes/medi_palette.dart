@@ -12,7 +12,7 @@
 
 import 'dart:ui' show Color;
 
-import '/src/palettes/common_palette.dart';
+import '../palette/common_palette.dart';
 
 // ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
 

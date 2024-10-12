@@ -10,7 +10,7 @@
 // ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓
 //.title~
 
-import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 
 import '/src/color_blenders/lerp_color_blender.dart';
 import '/src/color_curves.dart';
@@ -86,11 +86,6 @@ base class ColorMixer {
       result[n] = getMix(n)!;
     }
     return result;
-  }
-
-  MaterialColor getMaterialColor() {
-    final pallete = getPallete();
-    return MaterialColor(pallete[50]!.value, pallete);
   }
 
   //

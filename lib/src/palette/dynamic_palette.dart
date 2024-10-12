@@ -15,7 +15,7 @@ import 'dart:ui' show Color;
 import '/src/color_mixer.dart';
 import '/src/color_mixers/brightness_color_mixer.dart';
 import '/src/color_mixers/reverse_color_mixer.dart';
-import '/src/palettes/common_palette.dart';
+import 'common_palette.dart';
 import '../_example_palettes/example_flat_colors.dart';
 
 // ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
