@@ -1,7 +1,7 @@
 //.title
 // ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓
 //
-// Dart/Flutter (DF) Packages by DevCetra.com & contributors. The use of this
+// Dart/Flutter (DF) Packages by dev-cetera.com & contributors. The use of this
 // source code is governed by an MIT-style license described in the LICENSE
 // file located in this project's root directory.
 //
@@ -80,20 +80,13 @@ final class DynamicPalette extends CommonPalette {
   //
 
   DynamicPalette.pro({
-    this.primaryMixer =
-        const BrightnessColorMixer(baseColor: ExampleFlatColors.wetAsphalt),
-    this.secondaryMixer =
-        const BrightnessColorMixer(baseColor: ExampleFlatColors.belizeHole),
-    this.successMixer =
-        const BrightnessColorMixer(baseColor: ExampleFlatColors.greenSea),
-    this.neutralMixer =
-        const BrightnessColorMixer(baseColor: ExampleFlatColors.asbestos700),
-    this.errorMixer =
-        const BrightnessColorMixer(baseColor: ExampleFlatColors.pomegranate),
-    this.warningMixer =
-        const BrightnessColorMixer(baseColor: ExampleFlatColors.pumpkin),
-    this.contrastMixer =
-        const BrightnessColorMixer(baseColor: ExampleFlatColors.wetAsphalt),
+    this.primaryMixer = const BrightnessColorMixer(baseColor: ExampleFlatColors.wetAsphalt),
+    this.secondaryMixer = const BrightnessColorMixer(baseColor: ExampleFlatColors.belizeHole),
+    this.successMixer = const BrightnessColorMixer(baseColor: ExampleFlatColors.greenSea),
+    this.neutralMixer = const BrightnessColorMixer(baseColor: ExampleFlatColors.asbestos700),
+    this.errorMixer = const BrightnessColorMixer(baseColor: ExampleFlatColors.pomegranate),
+    this.warningMixer = const BrightnessColorMixer(baseColor: ExampleFlatColors.pumpkin),
+    this.contrastMixer = const BrightnessColorMixer(baseColor: ExampleFlatColors.wetAsphalt),
   });
 
   //
@@ -101,20 +94,13 @@ final class DynamicPalette extends CommonPalette {
   //
 
   DynamicPalette.grape({
-    this.primaryMixer =
-        const BrightnessColorMixer(baseColor: ExampleFlatColors.wisteria700),
-    this.secondaryMixer =
-        const BrightnessColorMixer(baseColor: ExampleFlatColors.peterRiver),
-    this.successMixer =
-        const BrightnessColorMixer(baseColor: ExampleFlatColors.emerald),
-    this.neutralMixer =
-        const BrightnessColorMixer(baseColor: Color(0xFF675876)),
-    this.errorMixer =
-        const BrightnessColorMixer(baseColor: ExampleFlatColors.alizarin),
-    this.warningMixer =
-        const BrightnessColorMixer(baseColor: ExampleFlatColors.carrot),
-    this.contrastMixer =
-        const BrightnessColorMixer(baseColor: ExampleFlatColors.wisteria700),
+    this.primaryMixer = const BrightnessColorMixer(baseColor: ExampleFlatColors.wisteria700),
+    this.secondaryMixer = const BrightnessColorMixer(baseColor: ExampleFlatColors.peterRiver),
+    this.successMixer = const BrightnessColorMixer(baseColor: ExampleFlatColors.emerald),
+    this.neutralMixer = const BrightnessColorMixer(baseColor: Color(0xFF675876)),
+    this.errorMixer = const BrightnessColorMixer(baseColor: ExampleFlatColors.alizarin),
+    this.warningMixer = const BrightnessColorMixer(baseColor: ExampleFlatColors.carrot),
+    this.contrastMixer = const BrightnessColorMixer(baseColor: ExampleFlatColors.wisteria700),
   });
 
   //

@@ -1,7 +1,7 @@
 //.title
 // ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓
 //
-// Dart/Flutter (DF) Packages by DevCetra.com & contributors. The use of this
+// Dart/Flutter (DF) Packages by dev-cetera.com & contributors. The use of this
 // source code is governed by an MIT-style license described in the LICENSE
 // file located in this project's root directory.
 //
@@ -35,8 +35,7 @@ final class AverageRGBColorBlender extends ColorBlender {
   @override
   Color $blend(Color c1, Color c2, double blendWeight) {
     int blendComponent(int component1, int component2) {
-      return ((component1 * blendWeight) + (component2 * (1 - blendWeight)))
-          .toInt();
+      return ((component1 * blendWeight) + (component2 * (1 - blendWeight))).toInt();
     }
 
     return Color.fromARGB(

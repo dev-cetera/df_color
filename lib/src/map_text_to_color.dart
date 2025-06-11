@@ -1,7 +1,7 @@
 //.title
 // ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓
 //
-// Dart/Flutter (DF) Packages by DevCetra.com & contributors. The use of this
+// Dart/Flutter (DF) Packages by dev-cetera.com & contributors. The use of this
 // source code is governed by an MIT-style license described in the LICENSE
 // file located in this project's root directory.
 //
@@ -39,8 +39,7 @@ Color mapTextToColor(
   final hue = hashInteger % 360;
 
   // Create a color with the desired saturation, lightness, and alpha values.
-  final baseColor =
-      HSLColor.fromAHSL(1.0, hue.toDouble(), saturation, lightness).toColor();
+  final baseColor = HSLColor.fromAHSL(1.0, hue.toDouble(), saturation, lightness).toColor();
 
   // Blend the base color with the blend color using the specified blend weight.
   final blendedColor = blendWeight > 0.0

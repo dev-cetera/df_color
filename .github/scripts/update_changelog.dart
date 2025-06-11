@@ -1,7 +1,7 @@
 //.title
 // ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓
 //
-// Dart/Flutter (DF) Packages by DevCetra.com & contributors. The use of this
+// Dart/Flutter (DF) Packages by dev-cetera.com & contributors. The use of this
 // source code is governed by an MIT-style license described in the LICENSE
 // file located in this project's root directory.
 //
@@ -40,9 +40,10 @@ void main(List<String> args) {
       ),
     );
   }
-  contents = '# Changelog\n\n${(sections.toList()..sort((a, b) {
-      return compareVersions(b.version, a.version);
-    })).map((e) => e.toString()).join('\n')}';
+  contents =
+      '# Changelog\n\n${(sections.toList()..sort((a, b) {
+        return compareVersions(b.version, a.version);
+      })).map((e) => e.toString()).join('\n')}';
 
   file.writeAsStringSync(contents);
   print('Changelog updated with version $version.');
@@ -56,12 +57,9 @@ Set<_VersionSection> extractSections(String contents) {
   final results = <_VersionSection>{};
   for (var i = 0; i < allVersionMatches.length; i++) {
     final start = allVersionMatches[i].end;
-    final end = i + 1 < allVersionMatches.length
-        ? allVersionMatches[i + 1].start
-        : contents.length;
+    final end = i + 1 < allVersionMatches.length ? allVersionMatches[i + 1].start : contents.length;
     final sectionContents = contents.substring(start, end).trim();
-    final lines =
-        sectionContents.split('\n').where((line) => line.isNotEmpty).toList();
+    final lines = sectionContents.split('\n').where((line) => line.isNotEmpty).toList();
     final version = allVersionMatches[i]
         .group(0)!
         .substring(4, allVersionMatches[i].group(0)!.length - 1);
@@ -75,19 +73,12 @@ Set<_VersionSection> extractSections(String contents) {
         .where((e) => e.isNotEmpty);
     for (var line in old) {
       if (line.contains('Released @')) {
-        final temp = line.split('Released @').last.trim();
-        releasedAt = DateTime.tryParse(temp) ?? releasedAt;
+        releasedAt = parseReleaseDate(line);
       } else {
         updates.add(line);
       }
     }
-    results.add(
-      _VersionSection(
-        version: version,
-        releasedAt: releasedAt,
-        updates: updates,
-      ),
-    );
+    results.add(_VersionSection(version: version, releasedAt: releasedAt, updates: updates));
   }
 
   return results;
@@ -108,11 +99,8 @@ class _VersionSection {
   //
   //
 
-  _VersionSection({
-    required this.version,
-    required this.releasedAt,
-    this.updates = const {},
-  });
+  _VersionSection({required this.version, required this.releasedAt, Set<String>? updates})
+    : this.updates = updates ?? {};
 
   //
   //
@@ -140,8 +128,7 @@ int compareVersions(String version1, String version2) {
   List<int> parseVersion(String version) {
     // Split by the '+' first to handle the build number
     final parts = version.split('+');
-    final versionParts =
-        parts[0].split('.').map(int.tryParse).map((e) => e ?? 0).toList();
+    final versionParts = parts[0].split('.').map(int.tryParse).map((e) => e ?? 0).toList();
     // Add the build number as the last part (if it exists)
     if (parts.length > 1) {
       versionParts.add(int.tryParse(parts[1]) ?? 0);
@@ -159,4 +146,20 @@ int compareVersions(String version1, String version2) {
     if (part1 < part2) return -1;
   }
   return 0;
+}
+
+// ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
+
+DateTime parseReleaseDate(String line) {
+  if (line.contains('Released @')) {
+    final temp = line.split('Released @').last.trim().replaceAll(' (UTC)', '');
+    final parts = temp.split('/');
+    if (parts.length == 2) {
+      final month = int.tryParse(parts[0]) ?? 1;
+      final year = int.tryParse(parts[1]) ?? DateTime.now().year;
+      return DateTime.utc(year, month);
+    }
+  }
+
+  return DateTime.now().toUtc();
 }
