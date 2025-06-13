@@ -119,8 +119,8 @@ abstract base class CommonPalette {
 
   Color get background => contrast50;
   Color get foreground => contrast1000;
-  Color get shadow => const Color(0xff000000).withOpacity(0.1);
-  Color get overlay => contrast1000.withOpacity(0.25);
+  Color get shadow => const Color(0xff000000).withValues(alpha: 0.1);
+  Color get overlay => contrast1000.withValues(alpha: 0.25);
 
   Color get apple => const Color(0xff000000);
   Color get facebook => const Color(0xff1877f2);

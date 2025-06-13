@@ -26,6 +26,6 @@ extension ColorSchemeExtension on ColorScheme {
       color1: surface,
       color2: shadow,
       blendWeight: 0.75,
-    ).blend().withOpacity(0.5);
+    ).blend().withValues(alpha: 0.5);
   }
 }

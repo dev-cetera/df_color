@@ -164,7 +164,7 @@ final class MediPalette extends CommonPalette {
   final contrast1000 = const Color(0xFF000000);
 
   @override
-  Color get shadow => contrast1000.withOpacity(0.2);
+  Color get shadow => contrast1000.withValues(alpha: 0.2);
   @override
-  Color get overlay => contrast1000.withOpacity(0.1);
+  Color get overlay => contrast1000.withValues(alpha: 0.1);
 }
