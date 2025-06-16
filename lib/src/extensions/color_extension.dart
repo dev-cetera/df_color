@@ -19,10 +19,10 @@ import 'package:flutter/rendering.dart' show HSLColor;
 extension ColorExtension on Color {
   Color get inverted {
     return Color.fromRGBO(
-      255 - red,
-      255 - green,
-      255 - blue,
-      opacity,
+      (255.0 * (1.0 - r)).round(),
+      (255.0 * 1.0 - b).round(),
+      (255.0 * 1.0 - b).round(),
+      a,
     );
   }
 

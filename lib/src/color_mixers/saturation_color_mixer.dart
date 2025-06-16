@@ -46,7 +46,7 @@ final class SaturationColorMixer extends ColorMixer {
     var adjustedSaturation = saturation * super.getFirstCurve()!.transform(t);
     adjustedSaturation = adjustedSaturation.clamp(0, 1).toDouble();
     return HSLColor.fromAHSL(
-      mixedColor.alpha.toDouble() / 255.0,
+      mixedColor.a,
       hslColor.hue,
       adjustedSaturation,
       hslColor.lightness,

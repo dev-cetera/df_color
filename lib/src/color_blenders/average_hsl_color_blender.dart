@@ -46,7 +46,7 @@ final class AverageHSLColorBlender extends ColorBlender {
     final blendedHue = blendComponent(hsl1.hue, hsl2.hue);
     final blendedSaturation = blendComponent(hsl1.saturation, hsl2.saturation);
     final blendedLightness = blendComponent(hsl1.lightness, hsl2.lightness);
-    final blendedAlpha = blendComponent(c1.alpha / 255, c2.alpha / 255);
+    final blendedAlpha = blendComponent(c1.a, c2.a);
 
     return HSLColor.fromAHSL(
       blendedAlpha,

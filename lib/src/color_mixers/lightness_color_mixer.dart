@@ -46,7 +46,7 @@ final class LightnessColorMixer extends ColorMixer {
     var adjustedLightness = lightness * super.getFirstCurve()!.transform(t);
     adjustedLightness = adjustedLightness.clamp(0, 1).toDouble();
     return HSLColor.fromAHSL(
-      mixedColor.alpha.toDouble() / 255.0,
+      mixedColor.a,
       hslColor.hue,
       hslColor.saturation,
       adjustedLightness,

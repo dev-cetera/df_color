@@ -34,15 +34,15 @@ final class AverageRGBColorBlender extends ColorBlender {
 
   @override
   Color $blend(Color c1, Color c2, double blendWeight) {
-    int blendComponent(int component1, int component2) {
-      return ((component1 * blendWeight) + (component2 * (1 - blendWeight))).toInt();
+    int blendComponent(double component1, double component2) {
+      return (((component1 * blendWeight) + (component2 * (1 - blendWeight))) * 255.0).round();
     }
 
     return Color.fromARGB(
-      blendComponent(c1.alpha, c2.alpha),
-      blendComponent(c1.red, c2.red),
-      blendComponent(c1.green, c2.green),
-      blendComponent(c1.blue, c2.blue),
+      blendComponent(c1.a, c2.a),
+      blendComponent(c1.r, c2.r),
+      blendComponent(c1.g, c2.g),
+      blendComponent(c1.b, c2.b),
     );
   }
 }

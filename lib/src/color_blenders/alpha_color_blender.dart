@@ -34,12 +34,12 @@ final class AlphaColorBlender extends ColorBlender {
 
   @override
   Color $blend(Color c1, Color c2, double blendWeight) {
-    if (c2.alpha == 0) return c1;
-    if (c1.alpha == 0) return c2;
+    if (c2.a == 0) return c1;
+    if (c1.a == 0) return c2;
 
     // Calculate adjusted alpha for c2 based on blendWeight.
     final alphaAdjustment = 2.0 * (blendWeight - 0.5);
-    final adjustedAlpha = (c2.alpha + alphaAdjustment * 255.0).clamp(0, 255).toInt();
+    final adjustedAlpha = (c2.a * 255.0 + alphaAdjustment * 255.0).clamp(0, 255).toInt();
 
     final alphaBlend = adjustedAlpha / 255.0;
 

@@ -45,7 +45,7 @@ final class HueColorMixer extends ColorMixer {
     final hue = hslColor.hue;
     final adjustedHue = (hue + 360 * super.getFirstCurve()!.transform(t)) % 360;
     return HSLColor.fromAHSL(
-      mixedColor.alpha.toDouble() / 255.0,
+      mixedColor.a,
       adjustedHue,
       hslColor.saturation,
       hslColor.lightness,
