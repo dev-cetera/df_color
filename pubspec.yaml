@@ -16,7 +16,7 @@ repository: https://github.com/robmllze/df_color
 funding:
   - https://www.buymeacoffee.com/dev_cetera
 description: Color utilities to enhance design aesthetics in your Flutter applications.
-version: 0.1.5
+version: 0.1.6
 topics:
   - color
   - colour
