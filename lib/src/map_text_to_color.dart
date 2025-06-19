@@ -39,7 +39,12 @@ Color mapTextToColor(
   final hue = hashInteger % 360;
 
   // Create a color with the desired saturation, lightness, and alpha values.
-  final baseColor = HSLColor.fromAHSL(1.0, hue.toDouble(), saturation, lightness).toColor();
+  final baseColor = HSLColor.fromAHSL(
+    1.0,
+    hue.toDouble(),
+    saturation,
+    lightness,
+  ).toColor();
 
   // Blend the base color with the blend color using the specified blend weight.
   final blendedColor = blendWeight > 0.0

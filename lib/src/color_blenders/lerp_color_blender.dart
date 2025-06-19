@@ -22,11 +22,7 @@ final class LerpColorBlender extends ColorBlender {
   //
   //
 
-  const LerpColorBlender({
-    super.color1,
-    super.color2,
-    super.blendWeight = 0.5,
-  });
+  const LerpColorBlender({super.color1, super.color2, super.blendWeight = 0.5});
 
   //
   //

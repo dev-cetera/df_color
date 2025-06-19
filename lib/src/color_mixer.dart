@@ -79,9 +79,7 @@ base class ColorMixer {
   }
 
   Map<int, Color> getPallete() {
-    final result = <int, Color>{
-      50: getMix(50)!,
-    };
+    final result = <int, Color>{50: getMix(50)!};
     for (var n = 0; n <= 1000; n += 100) {
       result[n] = getMix(n)!;
     }

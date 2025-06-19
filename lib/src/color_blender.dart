@@ -27,11 +27,7 @@ abstract base class ColorBlender {
   //
   //
 
-  const ColorBlender({
-    this.color1,
-    this.color2,
-    this.blendWeight,
-  });
+  const ColorBlender({this.color1, this.color2, this.blendWeight});
 
   //
   //
@@ -52,9 +48,5 @@ abstract base class ColorBlender {
   //
   //
 
-  Color $blend(
-    Color c1,
-    Color c2,
-    double blendWeight,
-  );
+  Color $blend(Color c1, Color c2, double blendWeight);
 }
