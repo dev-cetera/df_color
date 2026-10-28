@@ -13,13 +13,9 @@
 
 name: df_color
 homepage: https://dev-cetera.com/
-repository: https://github.com/robmllze/df_color
-funding:
-  - https://www.buymeacoffee.com/dev_cetera
-  - https://www.patreon.com/c/robelator
-  - https://github.com/sponsors/robelator
+repository: https://github.com/dev-cetera/df_color
 description: Color utilities to enhance design aesthetics in your Flutter applications.
-version: 0.2.0
+version: 0.3.0
 topics:
   - color
   - colour

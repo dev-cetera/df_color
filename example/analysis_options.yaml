@@ -1,7 +1,7 @@
 # For dev-cetera.com
 # Version: Flutter-1
 
-include: package:flutter_lints/recommended.yaml
+include: package:flutter_lints/flutter.yaml
 
 ## ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
 
